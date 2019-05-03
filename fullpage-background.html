@@ -1,2 +1,39 @@
+<!-- 
+  
+Visual
+A full page background image 
 
-# Visual
+The goal here is a background image on a website that covers the entire browser window at all times. Let's put some specifics on it:
+
+Fills entire page with image, no white space
+Scales image as needed
+Retains image proportions (aspect ratio)
+Image is centered on page
+Does not cause scrollbars
+As cross-browser compatible as possible
+Isn't some fancy shenanigans like Flash  
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    html { 
+      background: url(img/arrow-background.jpg) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+    </style>
+</body>
+</html>
+
+
